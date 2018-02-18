@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Team_up</string>
+
+    <string name="maeen">Expert Player</string>
+    <string name="hasib">Middle Player</string>
+    <string name="mifta">Last Player</string>
+    <string name="rifat">your first team</string>
+    <string name="rifat2">your second team</string>
+    <string name="biman">include coma(,) after every player</string>
+    <string-array name="select">
+        <item>Shapla</item>
+        <item>Man</item>
+
+    </string-array>
+</resources>

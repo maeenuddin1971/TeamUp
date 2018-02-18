@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.youtube.com.team_up.Toss">
+
+
+
+    <TextView
+        android:text="Select Shapla Or Man"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/spinner" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="108dp"
+        android:text="Toss"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gif"
+        android:src="@drawable/toss"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+
+        android:layout_height="48dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/gif"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:visibility="gone"
+        android:layout_width="134dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toBottomOf="@id/spinner"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button4"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <TextView
+
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginBottom="40dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button4" />
+
+</android.support.constraint.ConstraintLayout>
